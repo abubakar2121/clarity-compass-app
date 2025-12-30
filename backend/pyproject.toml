@@ -1,0 +1,15 @@
+[project]
+name = "backend"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "motor",
+    "python-dotenv",
+    "pydantic",
+    "uvicorn",
+    "pymongo[srv]",
+    "pydantic[email]",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

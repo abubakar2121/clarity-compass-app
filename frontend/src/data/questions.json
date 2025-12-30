@@ -1,0 +1,210 @@
+[
+  {
+    "question_id": "q1",
+    "text": "How often do you find yourself personally involved in day-to-day operational tasks that could be handled by your team?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "always", "label": "Always (I'm in the weeds daily)" },
+      { "value": "often", "label": "Often (Several times a week)" },
+      { "value": "sometimes", "label": "Sometimes (A few times a month)" },
+      { "value": "rarely", "label": "Rarely (Only for critical issues)" }
+    ],
+    "affirmation_text": "Got it. It's common for founders to wear many hats. Thanks for your honesty – that's the first step to clarity. Let's move to the next one."
+  },
+  {
+    "question_id": "q2",
+    "text": "When was the last time you felt truly 'off' from your team's energy or direction?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "today", "label": "Today/Yesterday" },
+      { "value": "this_week", "label": "This week" },
+      { "value": "this_month", "label": "This month" },
+      { "value": "rarely_ever", "label": "Rarely, if ever" }
+    ],
+    "affirmation_text": "Acknowledging team dynamics is crucial. Your perspective helps us understand the bigger picture."
+  },
+  {
+    "question_id": "q3",
+    "text": "How confident are you in your team's ability to execute key initiatives without your direct oversight?",
+    "stage_applicability": ["15-35", "36-60"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "not_confident", "label": "Not confident at all" },
+      { "value": "somewhat_confident", "label": "Somewhat confident, but I still check in frequently" },
+      { "value": "confident", "label": "Confident, they usually handle it well" },
+      { "value": "very_confident", "label": "Very confident, they're self-sufficient" }
+    ],
+    "affirmation_text": "Understanding your team's autonomy is key to effective delegation and scaling."
+  },
+  {
+    "question_id": "q4",
+    "text": "How would you describe your current onboarding process for new hires?",
+    "stage_applicability": ["15-35", "36-60"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "chaotic", "label": "Chaotic and inconsistent" },
+      { "value": "basic", "label": "Basic, but gets the job done" },
+      { "value": "structured", "label": "Structured and fairly efficient" },
+      { "value": "excellent", "label": "Excellent, a smooth experience for new hires" }
+    ],
+    "affirmation_text": "Onboarding sets the stage for success. Your insights here are valuable."
+  },
+  {
+    "question_id": "q5",
+    "text": "How often do you feel your leadership team is fully aligned on strategic priorities?",
+    "stage_applicability": ["36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "rarely", "label": "Rarely, we often have conflicting priorities" },
+      { "value": "sometimes", "label": "Sometimes, but it requires constant effort" },
+      { "value": "mostly", "label": "Mostly, with occasional minor disagreements" },
+      { "value": "always", "label": "Always, we're a cohesive unit" }
+    ],
+    "affirmation_text": "Alignment is a moving target as you grow. Thanks for your honesty – that's the first step to clarity."
+  },
+  {
+    "question_id": "q6",
+    "text": "How effectively do different departments or teams within your company collaborate on cross-functional projects?",
+    "stage_applicability": ["61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "poorly", "label": "Poorly, often leading to silos and friction" },
+      { "value": "adequately", "label": "Adequately, but there's room for improvement" },
+      { "value": "well", "label": "Well, most projects run smoothly" },
+      { "value": "excellently", "label": "Excellently, seamless collaboration is our norm" }
+    ],
+    "affirmation_text": "Cross-functional collaboration is a hallmark of scaling. Your input helps us understand your organizational health."
+  },
+  {
+    "question_id": "q7",
+    "text": "How would you rate the clarity of roles and responsibilities within your organization?",
+    "stage_applicability": ["36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "unclear", "label": "Very unclear, leading to confusion and overlap" },
+      { "value": "somewhat_clear", "label": "Somewhat clear, but still some ambiguity" },
+      { "value": "clear", "label": "Clear for most roles, with minor exceptions" },
+      { "value": "very_clear", "label": "Crystal clear across the board" }
+    ],
+    "affirmation_text": "Clarity in roles is foundational for efficient operations. Thank you for sharing."
+  },
+  {
+    "question_id": "q8",
+    "text": "How often do you feel overwhelmed by the sheer volume of decisions you need to make daily?",
+    "stage_applicability": ["15-35", "36-60"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "constantly", "label": "Constantly, it's a huge burden" },
+      { "value": "frequently", "label": "Frequently, I feel decision fatigue" },
+      { "value": "sometimes", "label": "Sometimes, but I manage" },
+      { "value": "rarely", "label": "Rarely, my team handles most decisions" }
+    ],
+    "affirmation_text": "Decision fatigue is real for founders. Your honesty helps us pinpoint areas for support."
+  },
+  {
+    "question_id": "q9",
+    "text": "How effective are your current systems for tracking and acting on key performance indicators (KPIs)?",
+    "stage_applicability": ["61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "ineffective", "label": "Ineffective, we struggle to get actionable data" },
+      { "value": "basic", "label": "Basic, we track some but don't always act" },
+      { "value": "effective", "label": "Effective, we have good visibility and act on insights" },
+      { "value": "highly_effective", "label": "Highly effective, data drives all our decisions" }
+    ],
+    "affirmation_text": "Data-driven decisions are vital for scaling. Your assessment of your KPI systems is insightful."
+  },
+  {
+    "question_id": "q10",
+    "text": "How would you describe the level of psychological safety within your team (i.e., feeling safe to speak up, take risks, and make mistakes)?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "low", "label": "Low, people are hesitant to speak up" },
+      { "value": "moderate", "label": "Moderate, some feel safe, others less so" },
+      { "value": "high", "label": "High, most feel comfortable being open" },
+      { "value": "very_high", "label": "Very high, it's a core value of our culture" }
+    ],
+    "affirmation_text": "Psychological safety is the bedrock of high-performing teams. Thank you for reflecting on this."
+  },
+  {
+    "question_id": "q11",
+    "text": "How often do you feel you have dedicated time for strategic thinking and long-term planning, free from urgent demands?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "never", "label": "Never, I'm always reacting" },
+      { "value": "rarely", "label": "Rarely, it's a constant struggle to find time" },
+      { "value": "sometimes", "label": "Sometimes, I manage to carve out a few hours" },
+      { "value": "regularly", "label": "Regularly, it's a priority in my schedule" }
+    ],
+    "affirmation_text": "Strategic time is a luxury many founders crave. Your answer helps us understand your current capacity."
+  },
+  {
+    "question_id": "q12",
+    "text": "How would you rate the effectiveness of your current hiring process in attracting and retaining top talent?",
+    "stage_applicability": ["36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "ineffective", "label": "Ineffective, we struggle to find and keep good people" },
+      { "value": "adequate", "label": "Adequate, but it's a constant challenge" },
+      { "value": "effective", "label": "Effective, we generally hire well" },
+      { "value": "highly_effective", "label": "Highly effective, we attract and retain exceptional talent" }
+    ],
+    "affirmation_text": "Hiring is critical for growth. Your perspective on your process is very helpful."
+  },
+  {
+    "question_id": "q13",
+    "text": "How clear is your company's long-term vision and how well is it communicated throughout the organization?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "unclear", "label": "Unclear, even to me sometimes" },
+      { "value": "somewhat_clear", "label": "Somewhat clear, but not consistently communicated" },
+      { "value": "clear", "label": "Clear and generally well-understood" },
+      { "value": "crystal_clear", "label": "Crystal clear and deeply embedded in our culture" }
+    ],
+    "affirmation_text": "A clear vision is a powerful compass. Thank you for sharing your perspective."
+  },
+  {
+    "question_id": "q14",
+    "text": "How often do you find yourself making decisions without sufficient data or input from relevant team members?",
+    "stage_applicability": ["15-35", "36-60"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "frequently", "label": "Frequently, I often have to make quick calls" },
+      { "value": "sometimes", "label": "Sometimes, when time is short" },
+      { "value": "rarely", "label": "Rarely, I usually gather input" },
+      { "value": "never", "label": "Never, I always rely on data and team input" }
+    ],
+    "affirmation_text": "Balancing speed and data in decision-making is a founder's art. Your insight is valuable."
+  },
+  {
+    "question_id": "q15",
+    "text": "How well documented are your core operational processes (e.g., sales, marketing, product development)?",
+    "stage_applicability": ["36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "poorly", "label": "Poorly, mostly tribal knowledge" },
+      { "value": "partially", "label": "Partially, some processes are documented" },
+      { "value": "well", "label": "Well, most key processes are documented" },
+      { "value": "comprehensively", "label": "Comprehensively, we have a strong knowledge base" }
+    ],
+    "affirmation_text": "Process documentation is key to scaling efficiently. Thank you for your assessment."
+  },
+  {
+    "question_id": "q16",
+    "text": "How confident are you in your understanding of your target market's evolving needs and competitive landscape?",
+    "stage_applicability": ["15-35", "36-60", "61-95", "96-200"],
+    "type": "multiple_choice",
+    "options": [
+      { "value": "low", "label": "Low, I feel out of touch sometimes" },
+      { "value": "moderate", "label": "Moderate, I keep up but could do more" },
+      { "value": "high", "label": "High, I have a solid grasp" },
+      { "value": "very_high", "label": "Very high, we actively monitor and adapt" }
+    ],
+    "affirmation_text": "Market understanding is foundational. Your perspective helps us gauge strategic clarity."
+  }
+]

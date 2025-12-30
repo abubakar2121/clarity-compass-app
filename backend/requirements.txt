@@ -1,0 +1,15 @@
+fastapi
+motor
+python-dotenv
+pydantic
+uvicorn
+pymongo[srv]
+pydantic[email]
+gunicorn
+dnspython
+cffi
+certifi
+bcrypt
+python-jose[cryptography]
+passlib
+python-multipart
