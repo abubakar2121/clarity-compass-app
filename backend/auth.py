@@ -112,8 +112,11 @@ async def get_current_user(request: Request, token: Optional[str] = Depends(oaut
 
     try:
         # The token might be prefixed with "Bearer ", so we remove it
-        if token.startswith("Bearer "):
+        if token and token.startswith("Bearer "):
             token = token.replace("Bearer ", "")
+        
+        if not token:
+            raise credentials_exception
             
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         email: str = payload.get("sub")

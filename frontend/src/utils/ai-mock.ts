@@ -1,5 +1,6 @@
 import { DiagnosticSession, Report, InsightType } from "@/lib/types";
 import { mockQuestions } from "@/data/questions";
+import API_URL from "@/config";
 
 interface PotentialInsight {
   mindsetShift?: string;
@@ -113,7 +114,7 @@ export const generateInsights = async (
   console.log("Calling backend to complete session and generate report for session", session.session_id);
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/session/${session.session_id}/complete`, {
+    const response = await fetch(`${API_URL}/api/v1/session/${session.session_id}/complete`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

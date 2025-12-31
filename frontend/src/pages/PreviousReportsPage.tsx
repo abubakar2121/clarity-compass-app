@@ -8,6 +8,7 @@ import { Report, AuthUser } from "@/lib/types";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import API_URL from "@/config";
 
 const PreviousReportsPage = () => {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ const PreviousReportsPage = () => {
 
         const fetchReports = async () => {
             try {
-                const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/reports/user/${user.id}`);
+                const response = await fetch(`${API_URL}/api/v1/reports/user/${user.id}`);
                 if (!response.ok) {
                     throw new Error("Failed to fetch reports");
                 }

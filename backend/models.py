@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, EmailStr
-from typing import Literal, Dict, Any, Any
+from typing import Literal, Dict, Any
 from datetime import datetime
 from bson import ObjectId
 from pydantic_core import core_schema
@@ -32,9 +32,13 @@ class PyObjectId(ObjectId):
 
     @classmethod
     def validate(cls, v):
-        if not ObjectId.is_valid(v):
-            raise ValueError("Invalid ObjectId")
-        return v
+        if isinstance(v, (ObjectId, cls)):
+            return v
+        if isinstance(v, str):
+            if not ObjectId.is_valid(v):
+                raise ValueError("Invalid ObjectId")
+            return ObjectId(v)
+        raise ValueError("Invalid ObjectId type")
 
 
 class User(BaseModel):

@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import { v4 as uuidv4 } from 'uuid';
 import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/context/AuthContext"; // Import useAuth
+import API_URL from "@/config";
 
 const DiagnosticPage = () => {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const DiagnosticPage = () => {
 
     const startDiagnosticSession = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/session/start`, {
+        const response = await fetch(`${API_URL}/api/v1/session/start`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -71,15 +72,11 @@ const DiagnosticPage = () => {
     };
 
     const initializeSession = async () => {
-      let currentSessionId = localStorage.getItem("founderClaritySessionId");
-      if (!currentSessionId) {
-        await startDiagnosticSession();
-      } else {
-        setSessionId(currentSessionId);
-        // Questions will be loaded if a session is rehydrated, but we need to fetch them if not.
-        const stageQuestions = getQuestionsForCompanySize(user.companySize); // This is mock, but will do for now.
-        setQuestions(stageQuestions);
-      }
+      // Always start a new session to ensure we have a valid session ID
+      // Clear any old session ID from localStorage first
+      localStorage.removeItem("founderClaritySessionId");
+      localStorage.removeItem("founderClaritySession");
+      await startDiagnosticSession();
     };
 
     initializeSession();
